@@ -1,4 +1,6 @@
 import express from "express";
+import { logger } from './utils/logger';
+
 
 const app = express();
 const port = 3000;
@@ -15,5 +17,5 @@ app.get("/pessoa", (req, res) => {
   res.send(Pessoa)
 });
 app.listen(port, () => {
-  return console.log(`server is listening on ${port}`);
+  return logger.info(`server is listening on ${port}`);
 });
