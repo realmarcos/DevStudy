@@ -1,7 +1,7 @@
-import { pessoaRoutes } from './pessoaRoutes';
+import { pessoasRoutes } from './pessoasRoutes';
 import { Router } from 'express';
 
 const routes = Router();
 
-routes.use(pessoaRoutes);
+routes.use(pessoasRoutes);
 export default routes;
